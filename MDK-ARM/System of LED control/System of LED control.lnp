@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp.sp
+"system of led control\startup_stm32f401xc.o"
+"system of led control\main.o"
+"system of led control\stm32f4xx_it.o"
+"system of led control\stm32f4xx_ll_gpio.o"
+"system of led control\stm32f4xx_ll_tim.o"
+"system of led control\stm32f4xx_ll_dma.o"
+"system of led control\stm32f4xx_ll_rcc.o"
+"system of led control\stm32f4xx_ll_utils.o"
+"system of led control\stm32f4xx_ll_exti.o"
+"system of led control\system_stm32f4xx.o"
+"system of led control\hw_init.o"
+--strict --scatter "System of LED control\System of LED control.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "System of LED control.map" -o "System of LED control\System of LED control.axf"
