@@ -464,6 +464,26 @@
               <FileType>5</FileType>
               <FilePath>..\User\Inc\hw_init.h</FilePath>
             </File>
+            <File>
+              <FileName>state_handler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Src\state_handler.c</FilePath>
+            </File>
+            <File>
+              <FileName>state_handler.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Inc\state_handler.h</FilePath>
+            </File>
+            <File>
+              <FileName>IT_handlers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Src\IT_handlers.c</FilePath>
+            </File>
+            <File>
+              <FileName>IT_handlers.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Inc\IT_handlers.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

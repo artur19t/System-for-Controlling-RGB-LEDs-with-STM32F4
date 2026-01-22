@@ -10,6 +10,8 @@
 "system of led control\stm32f4xx_ll_exti.o"
 "system of led control\system_stm32f4xx.o"
 "system of led control\hw_init.o"
+"system of led control\state_handler.o"
+"system of led control\it_handlers.o"
 --strict --scatter "System of LED control\System of LED control.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
