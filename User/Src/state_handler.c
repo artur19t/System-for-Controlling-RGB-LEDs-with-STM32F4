@@ -53,7 +53,6 @@ void button_debounce(but_struct *btn)
       }
       btn->state = WAIT_RELEASED;
       btn->debounce = DEBOUNCE_TIME;
-      btn->time_p = SHORT_PRESSED;
       break;
 
     case WAIT_RELEASED:
@@ -61,6 +60,8 @@ void button_debounce(but_struct *btn)
       {
         btn->state = RELEASED;
         btn->debounce = DEBOUNCE_TIME;
+        btn->released_event = 1;
+        btn->t = 0;
       }
       btn->t ++;
       if (btn->t >= 7000)

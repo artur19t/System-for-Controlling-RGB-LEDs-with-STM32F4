@@ -100,4 +100,55 @@ void SYSCFG_Usr_Init(void)
 {
     LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
 }
+
+// --- PWM ---
+void PWM_Timer_UsrInit(TIM_TypeDef *TIMx)
+{
+  if (TIMx == TIM2)
+  {
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);
+  }else if (TIMx == TIM3) 
+  {
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM3);
+  }else if (TIMx == TIM4) 
+  {
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM4);
+  }
+
+  LL_TIM_SetPrescaler(TIMx, 84-1);
+  LL_TIM_SetAutoReload(TIMx, 1000-1);
+  LL_TIM_SetCounterMode(TIMx, LL_TIM_COUNTERMODE_UP);
+
+  // PWM mode
+  LL_TIM_OC_SetMode(TIMx, LL_TIM_CHANNEL_CH1, LL_TIM_OCMODE_PWM1);
+  LL_TIM_OC_SetMode(TIMx, LL_TIM_CHANNEL_CH2, LL_TIM_OCMODE_PWM1);
+  LL_TIM_OC_SetMode(TIMx, LL_TIM_CHANNEL_CH3, LL_TIM_OCMODE_PWM1);
+
+  // Start from 0 duty
+  LL_TIM_OC_SetCompareCH1(TIMx, 0);
+  LL_TIM_OC_SetCompareCH2(TIMx, 0);
+  LL_TIM_OC_SetCompareCH3(TIMx, 0);
+
+  // Preload
+  LL_TIM_OC_EnablePreload(TIMx, LL_TIM_CHANNEL_CH1);
+  LL_TIM_OC_EnablePreload(TIMx, LL_TIM_CHANNEL_CH2);
+  LL_TIM_OC_EnablePreload(TIMx, LL_TIM_CHANNEL_CH3);
+
+  // Polarity
+  LL_TIM_OC_SetPolarity(TIMx, LL_TIM_CHANNEL_CH1, LL_TIM_OCPOLARITY_HIGH);
+  LL_TIM_OC_SetPolarity(TIMx, LL_TIM_CHANNEL_CH2, LL_TIM_OCPOLARITY_HIGH);
+  LL_TIM_OC_SetPolarity(TIMx, LL_TIM_CHANNEL_CH3, LL_TIM_OCPOLARITY_HIGH);
+
+  // Enable channels
+  LL_TIM_CC_EnableChannel(TIMx, LL_TIM_CHANNEL_CH1);
+  LL_TIM_CC_EnableChannel(TIMx, LL_TIM_CHANNEL_CH2);
+  LL_TIM_CC_EnableChannel(TIMx, LL_TIM_CHANNEL_CH3);
+
+  LL_TIM_EnableARRPreload(TIMx);
+
+  LL_TIM_GenerateEvent_UPDATE(TIMx);
+  LL_TIM_EnableCounter(TIMx);
+}
+
+
 // --- USART ---

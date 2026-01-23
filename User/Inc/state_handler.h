@@ -3,7 +3,7 @@
 
 #include "main.h"
 
-#define DEBOUNCE_TIME 50
+#define DEBOUNCE_TIME 70
 
 typedef enum
 {
@@ -27,8 +27,11 @@ typedef struct
   uint16_t debounce;
   uint32_t t;
   uint8_t event;
+  uint8_t released_event;
   GPIO_TypeDef *port;
-  uint8_t pin;
+  uint32_t pin;
 }but_struct;
+
+void button_debounce(but_struct *btn);
 
 #endif
