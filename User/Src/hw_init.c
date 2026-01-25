@@ -62,7 +62,7 @@ void GPIO_Button_Room_Init(void)
   LL_GPIO_Init(GPIOB, &GPIO_Usr_Struct);
 }
 
-// --- PB9, Motion sensor) ---
+// --- PB9, Motion sensor ---
 void GPIO_Motion_Sensor_Init (void)
 {
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
@@ -73,6 +73,20 @@ void GPIO_Motion_Sensor_Init (void)
   GPIO_Init.Pull = LL_GPIO_PULL_NO;
   GPIO_Init.Speed = LL_GPIO_SPEED_FREQ_LOW;
   LL_GPIO_Init(GPIOB, &GPIO_Init);
+}
+
+// --- Encoder analog gpio ---
+void GPIO_ADC_Init(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+
+  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+  GPIO_InitStruct.Pin  = LL_GPIO_PIN_3;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 }
 
 // --- Interrupts ----
@@ -183,4 +197,28 @@ void PWM_Timer_UsrInit(TIM_TypeDef *TIMx)
 
   LL_TIM_GenerateEvent_UPDATE(TIMx);
   LL_TIM_EnableCounter(TIMx);
+}
+
+// --- ADC for enkoder ---
+void ADC1_Init(void)
+{
+  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC1);
+
+  LL_ADC_SetResolution(ADC1, LL_ADC_RESOLUTION_12B);
+  LL_ADC_SetDataAlignment(ADC1, LL_ADC_DATA_ALIGN_RIGHT);
+
+  LL_ADC_SetSequencersScanMode(ADC1, LL_ADC_SEQ_SCAN_DISABLE);
+  LL_ADC_REG_SetTriggerSource(ADC1, LL_ADC_REG_TRIG_SOFTWARE);
+  LL_ADC_REG_SetContinuousMode(ADC1, LL_ADC_REG_CONV_SINGLE);
+
+  LL_ADC_REG_SetSequencerLength(ADC1, LL_ADC_REG_SEQ_SCAN_DISABLE);
+  LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_3);
+
+  LL_ADC_SetChannelSamplingTime(
+      ADC1,
+      LL_ADC_CHANNEL_3,
+      LL_ADC_SAMPLINGTIME_84CYCLES
+  );
+
+  LL_ADC_Enable(ADC1);
 }

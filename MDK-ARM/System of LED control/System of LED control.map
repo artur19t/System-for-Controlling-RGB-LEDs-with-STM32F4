@@ -108,62 +108,38 @@ Section Cross References
     stm32f4xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_SetAFPin_8_15) refers to stm32f4xx_ll_gpio.o(.text.LL_GPIO_SetAFPin_8_15) for [Anonymous Symbol]
     stm32f4xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_SetPinMode) refers to stm32f4xx_ll_gpio.o(.text.LL_GPIO_SetPinMode) for [Anonymous Symbol]
     stm32f4xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_StructInit) refers to stm32f4xx_ll_gpio.o(.text.LL_GPIO_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset) for LL_APB2_GRP1_ForceReset
-    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset) for LL_APB2_GRP1_ReleaseReset
-    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset) for LL_APB1_GRP1_ForceReset
-    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset) for LL_APB1_GRP1_ReleaseReset
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ForceReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ReleaseReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload) for LL_TIM_SetAutoReload
-    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler) for LL_TIM_SetPrescaler
-    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter) for LL_TIM_SetRepetitionCounter
-    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE) for LL_TIM_GenerateEvent_UPDATE
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetAutoReload) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetPrescaler) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetRepetitionCounter) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC1Config) for OC1Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC2Config) for OC2Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC3Config) for OC3Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC4Config) for OC4Config
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.OC1Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1) for LL_TIM_OC_SetCompareCH1
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC1Config) refers to stm32f4xx_ll_tim.o(.text.OC1Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.OC2Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for LL_TIM_OC_SetCompareCH2
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC2Config) refers to stm32f4xx_ll_tim.o(.text.OC2Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.OC3Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3) for LL_TIM_OC_SetCompareCH3
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC3Config) refers to stm32f4xx_ll_tim.o(.text.OC3Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.OC4Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4) for LL_TIM_OC_SetCompareCH4
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC4Config) refers to stm32f4xx_ll_tim.o(.text.OC4Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_IC_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC1Config) for IC1Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC2Config) for IC2Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC3Config) for IC3Config
-    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC4Config) for IC4Config
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC1Config) refers to stm32f4xx_ll_tim.o(.text.IC1Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC2Config) refers to stm32f4xx_ll_tim.o(.text.IC2Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC3Config) refers to stm32f4xx_ll_tim.o(.text.IC3Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC4Config) refers to stm32f4xx_ll_tim.o(.text.IC4Config) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode) for LL_TIM_SetEncoderMode
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetEncoderMode) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for LL_TIM_OC_SetCompareCH2
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH2) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_Init) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH1) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH3) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3) for [Anonymous Symbol]
-    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH4) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_CommonDeInit) refers to stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ForceReset) for LL_APB2_GRP1_ForceReset
+    stm32f4xx_ll_adc.o(.text.LL_ADC_CommonDeInit) refers to stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ReleaseReset) for LL_APB2_GRP1_ReleaseReset
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonDeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_CommonDeInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset) refers to stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ForceReset) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset) refers to stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ReleaseReset) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_CommonInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for LL_ADC_IsEnabled
+    stm32f4xx_ll_adc.o(.text.LL_ADC_CommonInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_SetCommonClock) for LL_ADC_SetCommonClock
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_CommonInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_IsEnabled) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_SetCommonClock) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_SetCommonClock) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonStructInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_CommonStructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for LL_ADC_IsEnabled
+    stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetTriggerSource) for LL_ADC_REG_SetTriggerSource
+    stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetTriggerSource) for LL_ADC_INJ_SetTriggerSource
+    stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_Disable) for LL_ADC_Disable
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_DeInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_SetTriggerSource) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetTriggerSource) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_SetTriggerSource) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetTriggerSource) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_Disable) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_Disable) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for LL_ADC_IsEnabled
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_StructInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_REG_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for LL_ADC_IsEnabled
+    stm32f4xx_ll_adc.o(.text.LL_ADC_REG_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetSequencerLength) for LL_ADC_REG_SetSequencerLength
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerLength) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetSequencerLength) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_StructInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_REG_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled) for LL_ADC_IsEnabled
+    stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetSequencerLength) for LL_ADC_INJ_SetSequencerLength
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_Init) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_SetSequencerLength) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetSequencerLength) for [Anonymous Symbol]
+    stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_StructInit) refers to stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_StructInit) for [Anonymous Symbol]
     stm32f4xx_ll_dma.o(.text.LL_DMA_DeInit) refers to stm32f4xx_ll_dma.o(.text.LL_AHB1_GRP1_ForceReset) for LL_AHB1_GRP1_ForceReset
     stm32f4xx_ll_dma.o(.text.LL_DMA_DeInit) refers to stm32f4xx_ll_dma.o(.text.LL_AHB1_GRP1_ReleaseReset) for LL_AHB1_GRP1_ReleaseReset
     stm32f4xx_ll_dma.o(.text.LL_DMA_DeInit) refers to stm32f4xx_ll_dma.o(.text.LL_DMA_DisableStream) for LL_DMA_DisableStream
@@ -344,6 +320,62 @@ Section Cross References
     stm32f4xx_ll_exti.o(.ARM.exidx.text.LL_EXTI_DisableRisingTrig_0_31) refers to stm32f4xx_ll_exti.o(.text.LL_EXTI_DisableRisingTrig_0_31) for [Anonymous Symbol]
     stm32f4xx_ll_exti.o(.ARM.exidx.text.LL_EXTI_EnableFallingTrig_0_31) refers to stm32f4xx_ll_exti.o(.text.LL_EXTI_EnableFallingTrig_0_31) for [Anonymous Symbol]
     stm32f4xx_ll_exti.o(.ARM.exidx.text.LL_EXTI_StructInit) refers to stm32f4xx_ll_exti.o(.text.LL_EXTI_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset) for LL_APB2_GRP1_ForceReset
+    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset) for LL_APB2_GRP1_ReleaseReset
+    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset) for LL_APB1_GRP1_ForceReset
+    stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset) for LL_APB1_GRP1_ReleaseReset
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ForceReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ReleaseReset) refers to stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload) for LL_TIM_SetAutoReload
+    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler) for LL_TIM_SetPrescaler
+    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter) for LL_TIM_SetRepetitionCounter
+    stm32f4xx_ll_tim.o(.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE) for LL_TIM_GenerateEvent_UPDATE
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetAutoReload) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetPrescaler) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetRepetitionCounter) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC1Config) for OC1Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC2Config) for OC2Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC3Config) for OC3Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.OC4Config) for OC4Config
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.OC1Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1) for LL_TIM_OC_SetCompareCH1
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC1Config) refers to stm32f4xx_ll_tim.o(.text.OC1Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.OC2Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for LL_TIM_OC_SetCompareCH2
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC2Config) refers to stm32f4xx_ll_tim.o(.text.OC2Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.OC3Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3) for LL_TIM_OC_SetCompareCH3
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC3Config) refers to stm32f4xx_ll_tim.o(.text.OC3Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.OC4Config) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4) for LL_TIM_OC_SetCompareCH4
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.OC4Config) refers to stm32f4xx_ll_tim.o(.text.OC4Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_IC_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC1Config) for IC1Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC2Config) for IC2Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC3Config) for IC3Config
+    stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.IC4Config) for IC4Config
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC1Config) refers to stm32f4xx_ll_tim.o(.text.IC1Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC2Config) refers to stm32f4xx_ll_tim.o(.text.IC2Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC3Config) refers to stm32f4xx_ll_tim.o(.text.IC3Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.IC4Config) refers to stm32f4xx_ll_tim.o(.text.IC4Config) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode) for LL_TIM_SetEncoderMode
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetEncoderMode) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for LL_TIM_OC_SetCompareCH2
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH2) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_Init) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH1) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH3) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3) for [Anonymous Symbol]
+    stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH4) refers to stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4) for [Anonymous Symbol]
     system_stm32f4xx.o(.ARM.exidx.text.SystemInit) refers to system_stm32f4xx.o(.text.SystemInit) for [Anonymous Symbol]
     system_stm32f4xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
     system_stm32f4xx.o(.text.SystemCoreClockUpdate) refers to system_stm32f4xx.o(.rodata.AHBPrescTable) for AHBPrescTable
@@ -364,6 +396,9 @@ Section Cross References
     hw_init.o(.text.GPIO_Motion_Sensor_Init) refers to hw_init.o(.text.LL_AHB1_GRP1_EnableClock) for LL_AHB1_GRP1_EnableClock
     hw_init.o(.text.GPIO_Motion_Sensor_Init) refers to stm32f4xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
     hw_init.o(.ARM.exidx.text.GPIO_Motion_Sensor_Init) refers to hw_init.o(.text.GPIO_Motion_Sensor_Init) for [Anonymous Symbol]
+    hw_init.o(.text.GPIO_ADC_Init) refers to hw_init.o(.text.LL_AHB1_GRP1_EnableClock) for LL_AHB1_GRP1_EnableClock
+    hw_init.o(.text.GPIO_ADC_Init) refers to stm32f4xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
+    hw_init.o(.ARM.exidx.text.GPIO_ADC_Init) refers to hw_init.o(.text.GPIO_ADC_Init) for [Anonymous Symbol]
     hw_init.o(.text.IT_BUTTONS_Init) refers to stm32f4xx_ll_exti.o(.text.LL_EXTI_Init) for LL_EXTI_Init
     hw_init.o(.text.IT_BUTTONS_Init) refers to hw_init.o(.text.LL_SYSCFG_SetEXTISource) for LL_SYSCFG_SetEXTISource
     hw_init.o(.text.IT_BUTTONS_Init) refers to hw_init.o(.text.LL_EXTI_EnableIT_0_31) for LL_EXTI_EnableIT_0_31
@@ -419,6 +454,26 @@ Section Cross References
     hw_init.o(.ARM.exidx.text.LL_TIM_EnableARRPreload) refers to hw_init.o(.text.LL_TIM_EnableARRPreload) for [Anonymous Symbol]
     hw_init.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE) refers to hw_init.o(.text.LL_TIM_GenerateEvent_UPDATE) for [Anonymous Symbol]
     hw_init.o(.ARM.exidx.text.LL_TIM_EnableCounter) refers to hw_init.o(.text.LL_TIM_EnableCounter) for [Anonymous Symbol]
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_APB2_GRP1_EnableClock) for LL_APB2_GRP1_EnableClock
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_SetResolution) for LL_ADC_SetResolution
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_SetDataAlignment) for LL_ADC_SetDataAlignment
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_SetSequencersScanMode) for LL_ADC_SetSequencersScanMode
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_REG_SetTriggerSource) for LL_ADC_REG_SetTriggerSource
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_REG_SetContinuousMode) for LL_ADC_REG_SetContinuousMode
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_REG_SetSequencerLength) for LL_ADC_REG_SetSequencerLength
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_REG_SetSequencerRanks) for LL_ADC_REG_SetSequencerRanks
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_SetChannelSamplingTime) for LL_ADC_SetChannelSamplingTime
+    hw_init.o(.text.ADC1_Init) refers to hw_init.o(.text.LL_ADC_Enable) for LL_ADC_Enable
+    hw_init.o(.ARM.exidx.text.ADC1_Init) refers to hw_init.o(.text.ADC1_Init) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_SetResolution) refers to hw_init.o(.text.LL_ADC_SetResolution) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_SetDataAlignment) refers to hw_init.o(.text.LL_ADC_SetDataAlignment) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_SetSequencersScanMode) refers to hw_init.o(.text.LL_ADC_SetSequencersScanMode) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetTriggerSource) refers to hw_init.o(.text.LL_ADC_REG_SetTriggerSource) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetContinuousMode) refers to hw_init.o(.text.LL_ADC_REG_SetContinuousMode) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerLength) refers to hw_init.o(.text.LL_ADC_REG_SetSequencerLength) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerRanks) refers to hw_init.o(.text.LL_ADC_REG_SetSequencerRanks) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_SetChannelSamplingTime) refers to hw_init.o(.text.LL_ADC_SetChannelSamplingTime) for [Anonymous Symbol]
+    hw_init.o(.ARM.exidx.text.LL_ADC_Enable) refers to hw_init.o(.text.LL_ADC_Enable) for [Anonymous Symbol]
     state_handler.o(.text.button_debounce) refers to state_handler.o(.text.LL_GPIO_IsInputPinSet) for LL_GPIO_IsInputPinSet
     state_handler.o(.ARM.exidx.text.button_debounce) refers to state_handler.o(.text.button_debounce) for [Anonymous Symbol]
     state_handler.o(.ARM.exidx.text.LL_GPIO_IsInputPinSet) refers to state_handler.o(.text.LL_GPIO_IsInputPinSet) for [Anonymous Symbol]
@@ -610,75 +665,45 @@ Removing Unused input sections from the image.
     Removing stm32f4xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_SetPinMode), (8 bytes).
     Removing stm32f4xx_ll_gpio.o(.text.LL_GPIO_StructInit), (40 bytes).
     Removing stm32f4xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text), (0 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit), (296 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset), (24 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset), (24 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset), (24 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ForceReset), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset), (24 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ReleaseReset), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_StructInit), (34 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_Init), (302 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetAutoReload), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetPrescaler), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetRepetitionCounter), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE), (18 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_StructInit), (42 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init), (120 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.OC1Config), (198 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC1Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.OC2Config), (206 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC2Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.OC3Config), (204 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC3Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.OC4Config), (158 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC4Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_IC_StructInit), (30 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init), (120 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.IC1Config), (72 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC1Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.IC2Config), (74 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC2Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.IC3Config), (74 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC3Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.IC4Config), (74 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC4Config), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit), (52 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init), (178 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode), (26 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetEncoderMode), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit), (26 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init), (200 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH2), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit), (38 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_Init), (112 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH1), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH3), (8 bytes).
-    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4), (16 bytes).
-    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH4), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text), (0 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_CommonDeInit), (28 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonDeInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ForceReset), (24 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_APB2_GRP1_ReleaseReset), (24 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_CommonInit), (58 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_IsEnabled), (16 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_IsEnabled), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_SetCommonClock), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_SetCommonClock), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_CommonStructInit), (14 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_CommonStructInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_DeInit), (248 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_DeInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetTriggerSource), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_SetTriggerSource), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetTriggerSource), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_SetTriggerSource), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_Disable), (18 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_Disable), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_Init), (88 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_Init), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_StructInit), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_REG_Init), (140 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_Init), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_REG_SetSequencerLength), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerLength), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_REG_StructInit), (30 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_REG_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_Init), (136 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_Init), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_SetSequencerLength), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_SetSequencerLength), (8 bytes).
+    Removing stm32f4xx_ll_adc.o(.text.LL_ADC_INJ_StructInit), (26 bytes).
+    Removing stm32f4xx_ll_adc.o(.ARM.exidx.text.LL_ADC_INJ_StructInit), (8 bytes).
     Removing stm32f4xx_ll_dma.o(.text), (0 bytes).
     Removing stm32f4xx_ll_dma.o(.text.LL_DMA_DeInit), (972 bytes).
     Removing stm32f4xx_ll_dma.o(.ARM.exidx.text.LL_DMA_DeInit), (8 bytes).
@@ -849,6 +874,75 @@ Removing Unused input sections from the image.
     Removing stm32f4xx_ll_exti.o(.ARM.exidx.text.LL_EXTI_EnableFallingTrig_0_31), (8 bytes).
     Removing stm32f4xx_ll_exti.o(.text.LL_EXTI_StructInit), (28 bytes).
     Removing stm32f4xx_ll_exti.o(.ARM.exidx.text.LL_EXTI_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text), (0 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_DeInit), (296 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ForceReset), (24 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ForceReset), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_APB2_GRP1_ReleaseReset), (24 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB2_GRP1_ReleaseReset), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ForceReset), (24 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ForceReset), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_APB1_GRP1_ReleaseReset), (24 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_APB1_GRP1_ReleaseReset), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_StructInit), (34 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_Init), (302 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetAutoReload), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetAutoReload), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetPrescaler), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetPrescaler), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetRepetitionCounter), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetRepetitionCounter), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_GenerateEvent_UPDATE), (18 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_StructInit), (42 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_Init), (120 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.OC1Config), (198 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC1Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.OC2Config), (206 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC2Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.OC3Config), (204 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC3Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.OC4Config), (158 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.OC4Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_IC_StructInit), (30 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_IC_Init), (120 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.IC1Config), (72 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC1Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.IC2Config), (74 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC2Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.IC3Config), (74 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC3Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.IC4Config), (74 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.IC4Config), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit), (52 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_ENCODER_Init), (178 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_SetEncoderMode), (26 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_SetEncoderMode), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit), (26 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init), (200 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH2), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH2), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit), (38 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_BDTR_Init), (112 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH1), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH1), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH3), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH3), (8 bytes).
+    Removing stm32f4xx_ll_tim.o(.text.LL_TIM_OC_SetCompareCH4), (16 bytes).
+    Removing stm32f4xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_SetCompareCH4), (8 bytes).
     Removing system_stm32f4xx.o(.text), (0 bytes).
     Removing system_stm32f4xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
     Removing system_stm32f4xx.o(.text.SystemCoreClockUpdate), (288 bytes).
@@ -868,6 +962,8 @@ Removing Unused input sections from the image.
     Removing hw_init.o(.ARM.exidx.text.GPIO_Button_Room_Init), (8 bytes).
     Removing hw_init.o(.text.GPIO_Motion_Sensor_Init), (54 bytes).
     Removing hw_init.o(.ARM.exidx.text.GPIO_Motion_Sensor_Init), (8 bytes).
+    Removing hw_init.o(.text.GPIO_ADC_Init), (52 bytes).
+    Removing hw_init.o(.ARM.exidx.text.GPIO_ADC_Init), (8 bytes).
     Removing hw_init.o(.text.IT_BUTTONS_Init), (138 bytes).
     Removing hw_init.o(.ARM.exidx.text.IT_BUTTONS_Init), (8 bytes).
     Removing hw_init.o(.text.LL_SYSCFG_SetEXTISource), (100 bytes).
@@ -916,6 +1012,26 @@ Removing Unused input sections from the image.
     Removing hw_init.o(.ARM.exidx.text.LL_TIM_GenerateEvent_UPDATE), (8 bytes).
     Removing hw_init.o(.text.LL_TIM_EnableCounter), (18 bytes).
     Removing hw_init.o(.ARM.exidx.text.LL_TIM_EnableCounter), (8 bytes).
+    Removing hw_init.o(.text.ADC1_Init), (108 bytes).
+    Removing hw_init.o(.ARM.exidx.text.ADC1_Init), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_SetResolution), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_SetResolution), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_SetDataAlignment), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_SetDataAlignment), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_SetSequencersScanMode), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_SetSequencersScanMode), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_REG_SetTriggerSource), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetTriggerSource), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_REG_SetContinuousMode), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetContinuousMode), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_REG_SetSequencerLength), (26 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerLength), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_REG_SetSequencerRanks), (104 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_REG_SetSequencerRanks), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_SetChannelSamplingTime), (202 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_SetChannelSamplingTime), (8 bytes).
+    Removing hw_init.o(.text.LL_ADC_Enable), (18 bytes).
+    Removing hw_init.o(.ARM.exidx.text.LL_ADC_Enable), (8 bytes).
     Removing hw_init.o(.rodata.OFFSET_TAB_CCMRx), (7 bytes).
     Removing hw_init.o(.rodata.SHIFT_TAB_OCxx), (7 bytes).
     Removing hw_init.o(.rodata.SHIFT_TAB_CCxP), (7 bytes).
@@ -929,7 +1045,7 @@ Removing Unused input sections from the image.
     Removing it_handlers.o(.ARM.exidx.text.EXTI1_IRQHandler), (8 bytes).
     Removing it_handlers.o(.ARM.exidx.text.EXTI2_IRQHandler), (8 bytes).
 
-380 unused section(s) (total 12819 bytes) removed from the image.
+441 unused section(s) (total 14705 bytes) removed from the image.
 
 ==============================================================================
 
@@ -997,6 +1113,7 @@ Image Symbol Table
     startup_stm32f401xc.s                    0x00000000   Number         0  startup_stm32f401xc.o ABSOLUTE
     state_handler.c                          0x00000000   Number         0  state_handler.o ABSOLUTE
     stm32f4xx_it.c                           0x00000000   Number         0  stm32f4xx_it.o ABSOLUTE
+    stm32f4xx_ll_adc.c                       0x00000000   Number         0  stm32f4xx_ll_adc.o ABSOLUTE
     stm32f4xx_ll_dma.c                       0x00000000   Number         0  stm32f4xx_ll_dma.o ABSOLUTE
     stm32f4xx_ll_exti.c                      0x00000000   Number         0  stm32f4xx_ll_exti.o ABSOLUTE
     stm32f4xx_ll_gpio.c                      0x00000000   Number         0  stm32f4xx_ll_gpio.o ABSOLUTE
@@ -1339,88 +1456,88 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000194   Data   RO            3    RESET               startup_stm32f401xc.o
-    0x08000194   0x08000194   0x00000008   Code   RO          514  * !!!main             c_w.l(__main.o)
-    0x0800019c   0x0800019c   0x0000005c   Code   RO          679    !!!scatter          c_w.l(__scatter.o)
-    0x080001f8   0x080001f8   0x0000001a   Code   RO          683    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x08000194   0x08000194   0x00000008   Code   RO          581  * !!!main             c_w.l(__main.o)
+    0x0800019c   0x0800019c   0x0000005c   Code   RO          746    !!!scatter          c_w.l(__scatter.o)
+    0x080001f8   0x080001f8   0x0000001a   Code   RO          750    !!handler_copy      c_w.l(__scatter_copy.o)
     0x08000212   0x08000212   0x00000002   PAD
-    0x08000214   0x08000214   0x00000002   Code   RO          680    !!handler_null      c_w.l(__scatter.o)
+    0x08000214   0x08000214   0x00000002   Code   RO          747    !!handler_null      c_w.l(__scatter.o)
     0x08000216   0x08000216   0x00000002   PAD
-    0x08000218   0x08000218   0x0000001c   Code   RO          685    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x08000234   0x08000234   0x00000002   Code   RO          541    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000236   0x08000236   0x00000004   Code   RO          547    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          550    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          552    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          555    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          557    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          559    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          562    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          564    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          566    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          568    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          570    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          572    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          574    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          576    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          578    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          580    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          582    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          586    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          588    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          590    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000000   Code   RO          592    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
-    0x0800023a   0x0800023a   0x00000002   Code   RO          593    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
-    0x0800023c   0x0800023c   0x00000002   Code   RO          615    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          630    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          632    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          635    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          638    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          640    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000000   Code   RO          643    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x0800023e   0x0800023e   0x00000002   Code   RO          644    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x08000240   0x08000240   0x00000000   Code   RO          516    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x08000240   0x08000240   0x00000000   Code   RO          518    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x08000240   0x08000240   0x00000006   Code   RO          530    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x08000246   0x08000246   0x00000000   Code   RO          520    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x08000246   0x08000246   0x00000004   Code   RO          521    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x0800024a   0x0800024a   0x00000000   Code   RO          523    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x0800024a   0x0800024a   0x00000008   Code   RO          524    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x08000252   0x08000252   0x00000002   Code   RO          545    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000254   0x08000254   0x00000000   Code   RO          595    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000254   0x08000254   0x00000004   Code   RO          596    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x08000258   0x08000258   0x00000006   Code   RO          597    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x08000218   0x08000218   0x0000001c   Code   RO          752    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000234   0x08000234   0x00000002   Code   RO          608    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000236   0x08000236   0x00000004   Code   RO          614    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          617    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          619    .ARM.Collect$$libinit$$00000006  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          622    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          624    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          626    .ARM.Collect$$libinit$$00000010  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          629    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          631    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          633    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          635    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          637    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          639    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          641    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          643    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          645    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          647    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          649    .ARM.Collect$$libinit$$00000027  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          653    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          655    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          657    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000000   Code   RO          659    .ARM.Collect$$libinit$$00000034  c_w.l(libinit2.o)
+    0x0800023a   0x0800023a   0x00000002   Code   RO          660    .ARM.Collect$$libinit$$00000035  c_w.l(libinit2.o)
+    0x0800023c   0x0800023c   0x00000002   Code   RO          682    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          697    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          699    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          702    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          705    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          707    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000000   Code   RO          710    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0800023e   0x0800023e   0x00000002   Code   RO          711    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x08000240   0x08000240   0x00000000   Code   RO          583    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x08000240   0x08000240   0x00000000   Code   RO          585    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x08000240   0x08000240   0x00000006   Code   RO          597    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000246   0x08000246   0x00000000   Code   RO          587    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000246   0x08000246   0x00000004   Code   RO          588    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x0800024a   0x0800024a   0x00000000   Code   RO          590    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x0800024a   0x0800024a   0x00000008   Code   RO          591    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x08000252   0x08000252   0x00000002   Code   RO          612    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000254   0x08000254   0x00000000   Code   RO          662    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000254   0x08000254   0x00000004   Code   RO          663    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000258   0x08000258   0x00000006   Code   RO          664    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0800025e   0x0800025e   0x00000002   PAD
     0x08000260   0x08000260   0x00000040   Code   RO            4    .text               startup_stm32f401xc.o
-    0x080002a0   0x080002a0   0x00000006   Code   RO          512    .text               c_w.l(heapauxi.o)
-    0x080002a6   0x080002a6   0x0000004a   Code   RO          532    .text               c_w.l(sys_stackheap_outer.o)
-    0x080002f0   0x080002f0   0x00000012   Code   RO          534    .text               c_w.l(exit.o)
+    0x080002a0   0x080002a0   0x00000006   Code   RO          579    .text               c_w.l(heapauxi.o)
+    0x080002a6   0x080002a6   0x0000004a   Code   RO          599    .text               c_w.l(sys_stackheap_outer.o)
+    0x080002f0   0x080002f0   0x00000012   Code   RO          601    .text               c_w.l(exit.o)
     0x08000302   0x08000302   0x00000002   PAD
-    0x08000304   0x08000304   0x00000008   Code   RO          542    .text               c_w.l(libspace.o)
-    0x0800030c   0x0800030c   0x0000000c   Code   RO          605    .text               c_w.l(sys_exit.o)
-    0x08000318   0x08000318   0x00000002   Code   RO          620    .text               c_w.l(use_no_semi.o)
-    0x0800031a   0x0800031a   0x00000000   Code   RO          622    .text               c_w.l(indicate_semi.o)
+    0x08000304   0x08000304   0x00000008   Code   RO          609    .text               c_w.l(libspace.o)
+    0x0800030c   0x0800030c   0x0000000c   Code   RO          672    .text               c_w.l(sys_exit.o)
+    0x08000318   0x08000318   0x00000002   Code   RO          687    .text               c_w.l(use_no_semi.o)
+    0x0800031a   0x0800031a   0x00000000   Code   RO          689    .text               c_w.l(indicate_semi.o)
     0x0800031a   0x0800031a   0x00000002   PAD
     0x0800031c   0x0800031c   0x00000004   Code   RO           75    .text.BusFault_Handler  stm32f4xx_it.o
     0x08000320   0x08000320   0x00000002   Code   RO           81    .text.DebugMon_Handler  stm32f4xx_it.o
     0x08000322   0x08000322   0x00000002   PAD
-    0x08000324   0x08000324   0x00000028   Code   RO          494    .text.EXTI0_IRQHandler  it_handlers.o
-    0x0800034c   0x0800034c   0x00000022   Code   RO          500    .text.EXTI1_IRQHandler  it_handlers.o
+    0x08000324   0x08000324   0x00000028   Code   RO          561    .text.EXTI0_IRQHandler  it_handlers.o
+    0x0800034c   0x0800034c   0x00000022   Code   RO          567    .text.EXTI1_IRQHandler  it_handlers.o
     0x0800036e   0x0800036e   0x00000002   PAD
-    0x08000370   0x08000370   0x00000022   Code   RO          502    .text.EXTI2_IRQHandler  it_handlers.o
+    0x08000370   0x08000370   0x00000022   Code   RO          569    .text.EXTI2_IRQHandler  it_handlers.o
     0x08000392   0x08000392   0x00000002   PAD
     0x08000394   0x08000394   0x00000004   Code   RO           71    .text.HardFault_Handler  stm32f4xx_it.o
     0x08000398   0x08000398   0x00000022   Code   RO           15    .text.LL_APB1_GRP1_EnableClock  main.o
     0x080003ba   0x080003ba   0x00000002   PAD
     0x080003bc   0x080003bc   0x00000022   Code   RO           13    .text.LL_APB2_GRP1_EnableClock  main.o
     0x080003de   0x080003de   0x00000002   PAD
-    0x080003e0   0x080003e0   0x00000014   Code   RO          498    .text.LL_EXTI_ClearFlag_0_31  it_handlers.o
-    0x080003f4   0x080003f4   0x0000001e   Code   RO          496    .text.LL_EXTI_IsActiveFlag_0_31  it_handlers.o
+    0x080003e0   0x080003e0   0x00000014   Code   RO          565    .text.LL_EXTI_ClearFlag_0_31  it_handlers.o
+    0x080003f4   0x080003f4   0x0000001e   Code   RO          563    .text.LL_EXTI_IsActiveFlag_0_31  it_handlers.o
     0x08000412   0x08000412   0x00000002   PAD
     0x08000414   0x08000414   0x00000010   Code   RO           29    .text.LL_FLASH_GetLatency  main.o
     0x08000424   0x08000424   0x0000001c   Code   RO           27    .text.LL_FLASH_SetLatency  main.o
-    0x08000440   0x08000440   0x0000001a   Code   RO          482    .text.LL_GPIO_IsInputPinSet  state_handler.o
+    0x08000440   0x08000440   0x0000001a   Code   RO          549    .text.LL_GPIO_IsInputPinSet  state_handler.o
     0x0800045a   0x0800045a   0x00000002   PAD
-    0x0800045c   0x0800045c   0x00000014   Code   RO          304    .text.LL_Init1msTick  stm32f4xx_ll_utils.o
-    0x08000470   0x08000470   0x00000036   Code   RO          306    .text.LL_InitTick   stm32f4xx_ll_utils.o
+    0x0800045c   0x0800045c   0x00000014   Code   RO          274    .text.LL_Init1msTick  stm32f4xx_ll_utils.o
+    0x08000470   0x08000470   0x00000036   Code   RO          276    .text.LL_InitTick   stm32f4xx_ll_utils.o
     0x080004a6   0x080004a6   0x00000002   PAD
     0x080004a8   0x080004a8   0x00000010   Code   RO           45    .text.LL_PWR_IsActiveFlag_VOS  main.o
     0x080004b8   0x080004b8   0x0000001c   Code   RO           31    .text.LL_PWR_SetRegulVoltageScaling  main.o
@@ -1440,7 +1557,7 @@ Memory Map of the image
     0x080005c4   0x080005c4   0x0000001c   Code   RO           51    .text.LL_RCC_SetAPB2Prescaler  main.o
     0x080005e0   0x080005e0   0x0000001c   Code   RO           53    .text.LL_RCC_SetSysClkSource  main.o
     0x080005fc   0x080005fc   0x0000001c   Code   RO           57    .text.LL_RCC_SetTIMPrescaler  main.o
-    0x08000618   0x08000618   0x00000014   Code   RO          310    .text.LL_SetSystemCoreClock  stm32f4xx_ll_utils.o
+    0x08000618   0x08000618   0x00000014   Code   RO          280    .text.LL_SetSystemCoreClock  stm32f4xx_ll_utils.o
     0x0800062c   0x0800062c   0x00000004   Code   RO           73    .text.MemManage_Handler  stm32f4xx_it.o
     0x08000630   0x08000630   0x00000004   Code   RO           69    .text.NMI_Handler   stm32f4xx_it.o
     0x08000634   0x08000634   0x0000006c   Code   RO           21    .text.NVIC_EncodePriority  main.o
@@ -1451,28 +1568,28 @@ Memory Map of the image
     0x080006a8   0x080006a8   0x00000028   Code   RO           85    .text.SysTick_Handler  stm32f4xx_it.o
     0x080006d0   0x080006d0   0x000000ae   Code   RO           25    .text.SystemClock_Config  main.o
     0x0800077e   0x0800077e   0x00000002   PAD
-    0x08000780   0x08000780   0x00000012   Code   RO          396    .text.SystemInit    system_stm32f4xx.o
+    0x08000780   0x08000780   0x00000012   Code   RO          441    .text.SystemInit    system_stm32f4xx.o
     0x08000792   0x08000792   0x00000002   PAD
     0x08000794   0x08000794   0x00000004   Code   RO           77    .text.UsageFault_Handler  stm32f4xx_it.o
     0x08000798   0x08000798   0x00000010   Code   RO           23    .text.__NVIC_GetPriorityGrouping  main.o
     0x080007a8   0x080007a8   0x00000042   Code   RO           19    .text.__NVIC_SetPriority  main.o
     0x080007ea   0x080007ea   0x00000002   PAD
     0x080007ec   0x080007ec   0x0000003c   Code   RO           17    .text.__NVIC_SetPriorityGrouping  main.o
-    0x08000828   0x08000828   0x000000f4   Code   RO          480    .text.button_debounce  state_handler.o
+    0x08000828   0x08000828   0x000000f4   Code   RO          547    .text.button_debounce  state_handler.o
     0x0800091c   0x0800091c   0x0000003e   Code   RO           11    .text.main          main.o
-    0x0800095a   0x0800095a   0x0000001a   Code   RO          603    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x08000974   0x08000974   0x00000020   Data   RO          678    Region$$Table       anon$$obj.o
+    0x0800095a   0x0800095a   0x0000001a   Code   RO          670    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x08000974   0x08000974   0x00000020   Data   RO          745    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000998, Size: 0x000006a0, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08000998   0x00000004   Data   RW          400    .data.SystemCoreClock  system_stm32f4xx.o
-    0x20000004   0x0800099c   0x00000014   Data   RW          484    .data.btn_bed       state_handler.o
-    0x20000018   0x080009b0   0x00000014   Data   RW          486    .data.btn_room      state_handler.o
-    0x2000002c   0x080009c4   0x00000014   Data   RW          485    .data.btn_table     state_handler.o
-    0x20000040        -       0x00000060   Zero   RW          543    .bss                c_w.l(libspace.o)
+    0x20000000   0x08000998   0x00000004   Data   RW          445    .data.SystemCoreClock  system_stm32f4xx.o
+    0x20000004   0x0800099c   0x00000014   Data   RW          551    .data.btn_bed       state_handler.o
+    0x20000018   0x080009b0   0x00000014   Data   RW          553    .data.btn_room      state_handler.o
+    0x2000002c   0x080009c4   0x00000014   Data   RW          552    .data.btn_table     state_handler.o
+    0x20000040        -       0x00000060   Zero   RW          610    .bss                c_w.l(libspace.o)
     0x200000a0        -       0x00000200   Zero   RW            2    HEAP                startup_stm32f401xc.o
     0x200002a0        -       0x00000400   Zero   RW            1    STACK               startup_stm32f401xc.o
 
