@@ -186,6 +186,7 @@ void SysTick_Handler(void)
   button_debounce(&btn_bed);
   button_debounce(&btn_table);
   button_debounce(&btn_room);
+  encoder_task();
   /* USER CODE END SysTick_IRQn 0 */
 
   /* USER CODE BEGIN SysTick_IRQn 1 */

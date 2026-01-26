@@ -540,6 +540,16 @@
               <FileType>5</FileType>
               <FilePath>..\User\Inc\IT_handlers.h</FilePath>
             </File>
+            <File>
+              <FileName>ADC_logic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Src\ADC_logic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_logic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Inc\ADC_logic.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

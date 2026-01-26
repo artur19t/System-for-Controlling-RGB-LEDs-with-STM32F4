@@ -13,6 +13,7 @@
 "system of led control\hw_init.o"
 "system of led control\state_handler.o"
 "system of led control\it_handlers.o"
+"system of led control\adc_logic.o"
 --strict --scatter "System of LED control\System of LED control.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
