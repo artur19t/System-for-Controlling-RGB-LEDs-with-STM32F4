@@ -203,15 +203,21 @@ void PWM_Timer_UsrInit(TIM_TypeDef *TIMx)
 void ADC1_Init(void)
 {
   LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC1);
-
-  LL_ADC_SetResolution(ADC1, LL_ADC_RESOLUTION_12B);
-  LL_ADC_SetDataAlignment(ADC1, LL_ADC_DATA_ALIGN_RIGHT);
-
-  LL_ADC_SetSequencersScanMode(ADC1, LL_ADC_SEQ_SCAN_DISABLE);
-  LL_ADC_REG_SetTriggerSource(ADC1, LL_ADC_REG_TRIG_SOFTWARE);
-  LL_ADC_REG_SetContinuousMode(ADC1, LL_ADC_REG_CONV_SINGLE);
-
-  LL_ADC_REG_SetSequencerLength(ADC1, LL_ADC_REG_SEQ_SCAN_DISABLE);
+  
+  LL_ADC_InitTypeDef ADC_UsrStruct = {0};
+  ADC_UsrStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
+  ADC_UsrStruct.Resolution = LL_ADC_RESOLUTION_12B;
+  ADC_UsrStruct.SequencersScanMode = LL_ADC_SEQ_SCAN_DISABLE;
+  LL_ADC_Init(ADC1, &ADC_UsrStruct);
+  
+  LL_ADC_REG_InitTypeDef ADC_REG_UsrStruct = {0};
+  ADC_REG_UsrStruct.ContinuousMode = LL_ADC_REG_CONV_SINGLE;
+  ADC_REG_UsrStruct.DMATransfer = LL_ADC_REG_DMA_TRANSFER_NONE;
+  ADC_REG_UsrStruct.SequencerDiscont = LL_ADC_REG_SEQ_DISCONT_1RANK;
+  ADC_REG_UsrStruct.SequencerLength = LL_ADC_REG_SEQ_SCAN_DISABLE;
+  ADC_REG_UsrStruct.TriggerSource = LL_ADC_REG_TRIG_SOFTWARE;
+  LL_ADC_REG_Init(ADC1, &ADC_REG_UsrStruct);
+  
   LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_3);
 
   LL_ADC_SetChannelSamplingTime(
