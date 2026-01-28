@@ -4,6 +4,8 @@
 #include "main.h"
 
 #define DEBOUNCE_TIME 70
+#define SHORT_PRESS_T   3000
+#define LONG_PRESS_T    7000
 
 typedef enum
 {

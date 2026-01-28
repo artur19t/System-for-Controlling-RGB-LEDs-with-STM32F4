@@ -3,7 +3,7 @@
 <title>Static Call Graph - [System of LED control\System of LED control.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image System of LED control\System of LED control.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Mon Jan 26 16:04:36 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6240002: Last Updated: Wed Jan 28 20:05:22 2026
 <BR><P>
 <H3>Maximum Stack Usage =         60 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -43,12 +43,12 @@ Function Pointers
  <LI><a href="#[3b]">DMA2_Stream6_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[3c]">DMA2_Stream7_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[7]">DebugMon_Handler</a> from stm32f4xx_it.o(.text.DebugMon_Handler) referenced from startup_stm32f401xc.o(RESET)
- <LI><a href="#[10]">EXTI0_IRQHandler</a> from it_handlers.o(.text.EXTI0_IRQHandler) referenced from startup_stm32f401xc.o(RESET)
+ <LI><a href="#[10]">EXTI0_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[2d]">EXTI15_10_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[11]">EXTI1_IRQHandler</a> from it_handlers.o(.text.EXTI1_IRQHandler) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[12]">EXTI2_IRQHandler</a> from it_handlers.o(.text.EXTI2_IRQHandler) referenced from startup_stm32f401xc.o(RESET)
- <LI><a href="#[13]">EXTI3_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
- <LI><a href="#[14]">EXTI4_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
+ <LI><a href="#[13]">EXTI3_IRQHandler</a> from it_handlers.o(.text.EXTI3_IRQHandler) referenced from startup_stm32f401xc.o(RESET)
+ <LI><a href="#[14]">EXTI4_IRQHandler</a> from it_handlers.o(.text.EXTI4_IRQHandler) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[1d]">EXTI9_5_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[e]">FLASH_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
  <LI><a href="#[40]">FPU_IRQHandler</a> from startup_stm32f401xc.o(.text) referenced from startup_stm32f401xc.o(RESET)
@@ -295,13 +295,10 @@ Global Symbols
 <P><STRONG><a name="[3c]"></a>DMA2_Stream7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
 </UL>
+<P><STRONG><a name="[10]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
+</UL>
 <P><STRONG><a name="[2d]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
-</UL>
-<P><STRONG><a name="[13]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
-</UL>
-<P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
 </UL>
 <P><STRONG><a name="[1d]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f401xc.o(.text))
@@ -466,14 +463,6 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(.text.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
 </UL>
-<P><STRONG><a name="[10]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, it_handlers.o(.text.EXTI0_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = EXTI0_IRQHandler &rArr; LL_EXTI_ClearFlag_0_31
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_ClearFlag_0_31
-<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_IsActiveFlag_0_31
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
-</UL>
 <P><STRONG><a name="[11]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, it_handlers.o(.text.EXTI1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = EXTI1_IRQHandler &rArr; LL_EXTI_ClearFlag_0_31
 </UL>
@@ -484,6 +473,22 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[12]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, it_handlers.o(.text.EXTI2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = EXTI2_IRQHandler &rArr; LL_EXTI_ClearFlag_0_31
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_ClearFlag_0_31
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_IsActiveFlag_0_31
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, it_handlers.o(.text.EXTI3_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = EXTI3_IRQHandler &rArr; LL_EXTI_ClearFlag_0_31
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_ClearFlag_0_31
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_IsActiveFlag_0_31
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, it_handlers.o(.text.EXTI4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = EXTI4_IRQHandler &rArr; LL_EXTI_ClearFlag_0_31
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_ClearFlag_0_31
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_EXTI_IsActiveFlag_0_31
@@ -731,17 +736,19 @@ Local Symbols
 <P><STRONG><a name="[5c]"></a>LL_EXTI_IsActiveFlag_0_31</STRONG> (Thumb, 30 bytes, Stack size 4 bytes, it_handlers.o(.text.LL_EXTI_IsActiveFlag_0_31))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_EXTI_IsActiveFlag_0_31
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_IRQHandler
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
-<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 </UL>
 
 <P><STRONG><a name="[5d]"></a>LL_EXTI_ClearFlag_0_31</STRONG> (Thumb, 20 bytes, Stack size 4 bytes, it_handlers.o(.text.LL_EXTI_ClearFlag_0_31))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = LL_EXTI_ClearFlag_0_31
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI4_IRQHandler
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI3_IRQHandler
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI2_IRQHandler
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI1_IRQHandler
-<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI0_IRQHandler
 </UL>
 
 <P><STRONG><a name="[75]"></a>map</STRONG> (Thumb, 80 bytes, Stack size 20 bytes, adc_logic.o(.text.map))

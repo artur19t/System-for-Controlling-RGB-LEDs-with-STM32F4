@@ -1,14 +1,6 @@
 #include "IT_handlers.h"
 
-void EXTI0_IRQHandler(void)
-{
-  if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_0))
-  {
-    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_0);
-    btn_bed.event = 1;
-  }
-}
-
+// --- table button IT ---
 void EXTI1_IRQHandler(void)
 {
   if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_1))
@@ -18,11 +10,33 @@ void EXTI1_IRQHandler(void)
   }
 }
 
+
+// --- room button IT ---
 void EXTI2_IRQHandler(void)
 {
   if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_2))
   {
     LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_2);
+    btn_room.event = 1;
+  }
+}
+
+// --- bed button IT ---
+void EXTI3_IRQHandler(void)
+{
+  if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_3))
+  {
+    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_3);
+    btn_encoder.event = 1;
+  }
+}
+
+// --- encoder button IT ---
+void EXTI4_IRQHandler(void)
+{
+  if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_4))
+  {
+    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_4);
     btn_room.event = 1;
   }
 }

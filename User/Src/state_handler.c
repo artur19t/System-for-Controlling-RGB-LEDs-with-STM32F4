@@ -1,12 +1,5 @@
 #include "state_handler.h"
 
-but_struct btn_bed = {
-  .state = RELEASED,
-  .time_p = NOT_PRESSED,
-  .port = GPIOB,
-  .pin = LL_GPIO_PIN_0
-};
-
 but_struct btn_table = {
   .state = RELEASED,
   .time_p = NOT_PRESSED,
@@ -19,6 +12,21 @@ but_struct btn_room = {
   .time_p = NOT_PRESSED,
   .port = GPIOB,
   .pin = LL_GPIO_PIN_2
+};
+
+but_struct btn_bed = {
+  .state = RELEASED,
+  .time_p = NOT_PRESSED,
+  .port = GPIOB,
+  .pin = LL_GPIO_PIN_3
+};
+
+but_struct btn_encoder = {
+  
+  .state = RELEASED,
+  .time_p = NOT_PRESSED,
+  .port = GPIOA,
+  .pin = LL_GPIO_PIN_4
 };
 
 void button_debounce(but_struct *btn)
@@ -64,9 +72,9 @@ void button_debounce(but_struct *btn)
         btn->t = 0;
       }
       btn->t ++;
-      if (btn->t >= 7000)
+      if (btn->t >= LONG_PRESS_T)
         btn->time_p = LONGLONG_PRESSED;
-      else if (btn->t >= 3000)
+      else if (btn->t >= SHORT_PRESS_T)
         btn->time_p = LONG_PRESSED;
       else
         btn->time_p = SHORT_PRESSED;

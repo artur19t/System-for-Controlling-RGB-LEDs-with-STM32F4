@@ -1,6 +1,7 @@
 #include "hw_init.h"
 
 // --- GPIO ---
+//PA 3(encoder ADC), 4(encoder button)
 //PB 1(table),2(room),3(bed),9(motion sensor)
 //FOR PWM: PB 0,4,5(TIM3); PB 6,7,8 (TIM4); PA 0,1,2 (TIM5)
 void GPIO_PWM_UsrInit(void)
@@ -75,6 +76,19 @@ void GPIO_Motion_Sensor_Init (void)
   LL_GPIO_Init(GPIOB, &GPIO_Init);
 }
 
+// --- PA4, Button Encoder ---
+void GPIO_Button_Encoder_Init(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  
+  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
+  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_4;
+  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_DOWN;
+  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  LL_GPIO_Init(GPIOA, &GPIO_Usr_Struct);
+}
+
 // --- Encoder analog gpio ---
 void GPIO_ADC_Init(void)
 {
@@ -94,7 +108,7 @@ void IT_BUTTONS_Init(void)
 {
   LL_EXTI_InitTypeDef IT_But_Init = {0};
   IT_But_Init.LineCommand = ENABLE;
-  IT_But_Init.Line_0_31 = LL_EXTI_LINE_1 | LL_EXTI_LINE_2 | LL_EXTI_LINE_3;
+  IT_But_Init.Line_0_31 = LL_EXTI_LINE_1 | LL_EXTI_LINE_2 | LL_EXTI_LINE_3| LL_EXTI_LINE_4;
   IT_But_Init.Mode = LL_EXTI_MODE_IT;
   IT_But_Init.Trigger = LL_EXTI_TRIGGER_RISING;
   LL_EXTI_Init(&IT_But_Init);
@@ -102,6 +116,7 @@ void IT_BUTTONS_Init(void)
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE1);
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE2);
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE3);
+  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE4);
   
   LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_1);
   NVIC_SetPriority(EXTI1_IRQn, 0);
@@ -114,6 +129,10 @@ void IT_BUTTONS_Init(void)
   LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_3);
   NVIC_SetPriority(EXTI3_IRQn, 0);
   NVIC_EnableIRQ(EXTI3_IRQn);
+  
+  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_4);
+  NVIC_SetPriority(EXTI4_IRQn, 0);
+  NVIC_EnableIRQ(EXTI4_IRQn);
 }
 
 

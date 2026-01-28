@@ -7,5 +7,6 @@
 extern but_struct btn_bed;
 extern but_struct btn_table;
 extern but_struct btn_room;
+extern but_struct btn_encoder;
 
 #endif
