@@ -183,9 +183,17 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
+  sys_ms++;
   button_debounce(&btn_bed);
   button_debounce(&btn_table);
   button_debounce(&btn_room);
+  if (sys_ms>70)
+  {
+    encoder_read_delta(&encoder_st_bright);
+    encoder_read_delta(&encoder_st_color);
+    encoder_read_delta(&encoder_st_tone);
+    sys_ms = 0;
+  }
   /* USER CODE END SysTick_IRQn 0 */
 
   /* USER CODE BEGIN SysTick_IRQn 1 */

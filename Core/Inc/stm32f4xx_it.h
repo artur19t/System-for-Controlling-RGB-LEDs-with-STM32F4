@@ -32,7 +32,9 @@ extern "C" {
 extern but_struct btn_bed;
 extern but_struct btn_table;
 extern but_struct btn_room;
-
+extern encoder_st encoder_st_bright;
+extern encoder_st encoder_st_tone;
+extern encoder_st encoder_st_color;
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
