@@ -2,7 +2,7 @@ Dependencies for Project 'System of LED control', Target 'System of LED control'
 CompilerVersion: 6240000::V6.24::ARMCLANG
 F (startup_stm32f401xc.s)(0x697653FC)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"STM32F401xC SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o "system of led control/startup_stm32f401xc.o")
 F (../Core/Src/main.c)(0x696D073C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/main.o" -MMD)
-I (..\Core\Inc\main.h)(0x697741AD)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -19,8 +19,9 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
 I (..\User\Inc\hw_init.h)(0x697118B0)
-F (../Core/Src/stm32f4xx_it.c)(0x697734A0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/stm32f4xx_it.o" -MMD)
-I (..\Core\Inc\main.h)(0x697741AD)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
+F (../Core/Src/stm32f4xx_it.c)(0x697B0F0F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/stm32f4xx_it.o" -MMD)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -37,6 +38,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
 I (..\User\Inc\hw_init.h)(0x697118B0)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
 I (..\Core\Inc\stm32f4xx_it.h)(0x69773487)
 I (..\User\Inc\state_handler.h)(0x697A41B9)
 I (..\User\Inc\ADC_logic.h)(0x69774162)
@@ -94,9 +96,9 @@ I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Include\core_cm4.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x68F5D6F4)
-F (..\User\Src\hw_init.c)(0x697A3CD5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/hw_init.o" -MMD)
+F (..\User\Src\hw_init.c)(0x697B0EAC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/hw_init.o" -MMD)
 I (..\User\Inc\hw_init.h)(0x697118B0)
-I (..\Core\Inc\main.h)(0x697741AD)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -112,10 +114,11 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_pwr.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
 F (..\User\Inc\hw_init.h)(0x697118B0)()
 F (..\User\Src\state_handler.c)(0x697A41CE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/state_handler.o" -MMD)
 I (..\User\Inc\state_handler.h)(0x697A41B9)
-I (..\Core\Inc\main.h)(0x697741AD)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -132,10 +135,11 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
 I (..\User\Inc\hw_init.h)(0x697118B0)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
 F (..\User\Inc\state_handler.h)(0x697A41B9)()
-F (..\User\Src\IT_handlers.c)(0x697A411F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/it_handlers.o" -MMD)
-I (..\User\Inc\IT_handlers.h)(0x697A40A0)
-I (..\Core\Inc\main.h)(0x697741AD)
+F (..\User\Src\IT_handlers.c)(0x697B0E12)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/it_handlers.o" -MMD)
+I (..\User\Inc\IT_handlers.h)(0x697B0ED4)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -152,11 +156,12 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
 I (..\User\Inc\hw_init.h)(0x697118B0)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
 I (..\User\Inc\state_handler.h)(0x697A41B9)
-F (..\User\Inc\IT_handlers.h)(0x697A40A0)()
-F (..\User\Src\ADC_logic.c)(0x69776652)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/adc_logic.o" -MMD)
-I (..\User\Inc\ADC_logic.h)(0x69774162)
-I (..\Core\Inc\main.h)(0x697741AD)
+F (..\User\Inc\IT_handlers.h)(0x697B0ED4)()
+F (..\User\Src\led_driver.c)(0x697B0C49)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I./RTE/_System_of_LED_control-IC:/Users/trety/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o "system of led control/led_driver.o" -MMD)
+I (..\User\Inc\led_driver.h)(0x697B0C45)
+I (..\Core\Inc\main.h)(0x697B0C67)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x68F5D6F4)
 I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h)(0x68F5D6F4)
@@ -173,4 +178,4 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h)(0x68F5D6F4)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h)(0x68F5D6F4)
 I (..\User\Inc\hw_init.h)(0x697118B0)
-F (..\User\Inc\ADC_logic.h)(0x69774162)()
+F (..\User\Inc\led_driver.h)(0x697B0C45)()

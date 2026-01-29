@@ -47,6 +47,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include <stdlib.h>
 #include "hw_init.h"
+#include "led_driver.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

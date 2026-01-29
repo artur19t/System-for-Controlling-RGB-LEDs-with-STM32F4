@@ -1,4 +1,5 @@
-system\ of\ led\ control/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+system\ of\ led\ control/led_driver.o: ..\User\Src\led_driver.c \
+  ..\User\Inc\led_driver.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h \
@@ -14,4 +15,4 @@ system\ of\ led\ control/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h \
-  ..\User\Inc\hw_init.h ..\User\Inc\led_driver.h
+  ..\User\Inc\hw_init.h

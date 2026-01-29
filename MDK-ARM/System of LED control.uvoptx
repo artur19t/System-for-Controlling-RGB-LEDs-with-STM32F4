@@ -430,8 +430,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\User\Src\ADC_logic.c</PathWithFileName>
-      <FilenameWithoutPath>ADC_logic.c</FilenameWithoutPath>
+      <PathWithFileName>..\User\Src\led_driver.c</PathWithFileName>
+      <FilenameWithoutPath>led_driver.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -442,8 +442,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\User\Inc\ADC_logic.h</PathWithFileName>
-      <FilenameWithoutPath>ADC_logic.h</FilenameWithoutPath>
+      <PathWithFileName>..\User\Inc\led_driver.h</PathWithFileName>
+      <FilenameWithoutPath>led_driver.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

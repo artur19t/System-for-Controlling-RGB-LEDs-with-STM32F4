@@ -1,7 +1,6 @@
 #include "hw_init.h"
 
 // --- GPIO ---
-//PA 3(encoder ADC), 4(encoder button)
 //PB 1(table),2(room),3(bed),9(motion sensor)
 //FOR PWM: PB 0,4,5(TIM3); PB 6,7,8 (TIM4); PA 0,1,2 (TIM5)
 void GPIO_PWM_UsrInit(void)
@@ -22,19 +21,6 @@ void GPIO_PWM_UsrInit(void)
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2; //TIM5
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-}
-
-// --- PB3, Button for bed led ---
-void GPIO_Button_Bed_Init(void)
-{
-  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
-  
-  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
-  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
-  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_3;
-  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_DOWN;
-  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  LL_GPIO_Init(GPIOB, &GPIO_Usr_Struct);
 }
 
 // --- PB1, Button for table led ---
@@ -63,6 +49,19 @@ void GPIO_Button_Room_Init(void)
   LL_GPIO_Init(GPIOB, &GPIO_Usr_Struct);
 }
 
+// --- PB3, Button for bed led ---
+void GPIO_Button_Bed_Init(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
+  
+  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
+  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_3;
+  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_DOWN;
+  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  LL_GPIO_Init(GPIOB, &GPIO_Usr_Struct);
+}
+
 // --- PB9, Motion sensor ---
 void GPIO_Motion_Sensor_Init (void)
 {
@@ -76,39 +75,12 @@ void GPIO_Motion_Sensor_Init (void)
   LL_GPIO_Init(GPIOB, &GPIO_Init);
 }
 
-// --- PA4, Button Encoder ---
-void GPIO_Button_Encoder_Init(void)
-{
-  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
-  
-  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
-  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
-  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_4;
-  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_DOWN;
-  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-  LL_GPIO_Init(GPIOA, &GPIO_Usr_Struct);
-}
-
-// --- Encoder analog gpio ---
-void GPIO_ADC_Init(void)
-{
-  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
-
-  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-  GPIO_InitStruct.Pin  = LL_GPIO_PIN_3;
-  GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-
-  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-}
-
 // --- Interrupts ----
 void IT_BUTTONS_Init(void)
 {
   LL_EXTI_InitTypeDef IT_But_Init = {0};
   IT_But_Init.LineCommand = ENABLE;
-  IT_But_Init.Line_0_31 = LL_EXTI_LINE_1 | LL_EXTI_LINE_2 | LL_EXTI_LINE_3| LL_EXTI_LINE_4;
+  IT_But_Init.Line_0_31 = LL_EXTI_LINE_1 | LL_EXTI_LINE_2 | LL_EXTI_LINE_3;
   IT_But_Init.Mode = LL_EXTI_MODE_IT;
   IT_But_Init.Trigger = LL_EXTI_TRIGGER_RISING;
   LL_EXTI_Init(&IT_But_Init);
@@ -116,7 +88,6 @@ void IT_BUTTONS_Init(void)
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE1);
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE2);
   LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE3);
-  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE4);
   
   LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_1);
   NVIC_SetPriority(EXTI1_IRQn, 0);
@@ -129,10 +100,6 @@ void IT_BUTTONS_Init(void)
   LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_3);
   NVIC_SetPriority(EXTI3_IRQn, 0);
   NVIC_EnableIRQ(EXTI3_IRQn);
-  
-  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_4);
-  NVIC_SetPriority(EXTI4_IRQn, 0);
-  NVIC_EnableIRQ(EXTI4_IRQn);
 }
 
 
@@ -216,34 +183,4 @@ void PWM_Timer_UsrInit(TIM_TypeDef *TIMx)
 
   LL_TIM_GenerateEvent_UPDATE(TIMx);
   LL_TIM_EnableCounter(TIMx);
-}
-
-// --- ADC for enkoder ---
-void ADC1_Init(void)
-{
-  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC1);
-  
-  LL_ADC_InitTypeDef ADC_UsrStruct = {0};
-  ADC_UsrStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
-  ADC_UsrStruct.Resolution = LL_ADC_RESOLUTION_12B;
-  ADC_UsrStruct.SequencersScanMode = LL_ADC_SEQ_SCAN_DISABLE;
-  LL_ADC_Init(ADC1, &ADC_UsrStruct);
-  
-  LL_ADC_REG_InitTypeDef ADC_REG_UsrStruct = {0};
-  ADC_REG_UsrStruct.ContinuousMode = LL_ADC_REG_CONV_SINGLE;
-  ADC_REG_UsrStruct.DMATransfer = LL_ADC_REG_DMA_TRANSFER_NONE;
-  ADC_REG_UsrStruct.SequencerDiscont = LL_ADC_REG_SEQ_DISCONT_1RANK;
-  ADC_REG_UsrStruct.SequencerLength = LL_ADC_REG_SEQ_SCAN_DISABLE;
-  ADC_REG_UsrStruct.TriggerSource = LL_ADC_REG_TRIG_SOFTWARE;
-  LL_ADC_REG_Init(ADC1, &ADC_REG_UsrStruct);
-  
-  LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_3);
-
-  LL_ADC_SetChannelSamplingTime(
-      ADC1,
-      LL_ADC_CHANNEL_3,
-      LL_ADC_SAMPLINGTIME_84CYCLES
-  );
-
-  LL_ADC_Enable(ADC1);
 }

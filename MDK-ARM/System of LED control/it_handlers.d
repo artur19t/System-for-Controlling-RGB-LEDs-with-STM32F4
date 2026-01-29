@@ -15,4 +15,5 @@ system\ of\ led\ control/it_handlers.o: ..\User\Src\IT_handlers.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h \
-  ..\User\Inc\hw_init.h ..\User\Inc\state_handler.h
+  ..\User\Inc\hw_init.h ..\User\Inc\led_driver.h \
+  ..\User\Inc\state_handler.h

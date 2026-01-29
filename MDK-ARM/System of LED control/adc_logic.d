@@ -15,4 +15,4 @@ system\ of\ led\ control/adc_logic.o: ..\User\Src\ADC_logic.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h \
-  ..\User\Inc\hw_init.h
+  ..\User\Inc\hw_init.h ..\User\Inc\led_driver.h

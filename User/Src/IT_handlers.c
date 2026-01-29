@@ -27,16 +27,6 @@ void EXTI3_IRQHandler(void)
   if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_3))
   {
     LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_3);
-    btn_encoder.event = 1;
-  }
-}
-
-// --- encoder button IT ---
-void EXTI4_IRQHandler(void)
-{
-  if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_4))
-  {
-    LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_4);
-    btn_room.event = 1;
+    btn_bed.event = 1;
   }
 }
