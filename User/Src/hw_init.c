@@ -1,8 +1,8 @@
 #include "hw_init.h"
 
 // --- GPIO ---
-//PB 1(table),2(room),3(bed),9(motion sensor)
-//FOR PWM: PB 0,4,5(TIM3); PB 6,7,8 (TIM4); PA 0,1,2 (TIM5)
+//PA 0,1,2 (TIM5, PWM), PA 3,4,5,6,7,8 (3 encoder)
+//PB 1(table),2(room),3(bed),PB 0,4,5(TIM3, PWM); PB 6,7,8 (TIM4, PWM),9(motion sensor)
 void GPIO_PWM_UsrInit(void)
 {
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
@@ -21,6 +21,45 @@ void GPIO_PWM_UsrInit(void)
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2; //TIM5
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+}
+
+// --- Pins for encoder bright ---
+void GPIO_Encoder_Brightness_UsrInit(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  
+  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
+  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_3 | LL_GPIO_PIN_4;
+  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_UP;
+  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  LL_GPIO_Init(GPIOA, &GPIO_Usr_Struct);
+}
+
+// --- Pins for encoder color ---
+void GPIO_Encoder_Color_UsrInit(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  
+  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
+  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_5 | LL_GPIO_PIN_6;
+  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_UP;
+  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  LL_GPIO_Init(GPIOA, &GPIO_Usr_Struct);
+}
+
+// --- Pins for encoder tone ---
+void GPIO_Encoder_Tone_UsrInit(void)
+{
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
+  
+  LL_GPIO_InitTypeDef GPIO_Usr_Struct = {0};
+  GPIO_Usr_Struct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_Usr_Struct.Pin = LL_GPIO_PIN_7 | LL_GPIO_PIN_8;
+  GPIO_Usr_Struct.Pull = LL_GPIO_PULL_UP;
+  GPIO_Usr_Struct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  LL_GPIO_Init(GPIOA, &GPIO_Usr_Struct);
 }
 
 // --- PB1, Button for table led ---
@@ -75,7 +114,13 @@ void GPIO_Motion_Sensor_Init (void)
   LL_GPIO_Init(GPIOB, &GPIO_Init);
 }
 
-// --- Interrupts ----
+// --- Interrupts ---
+
+void SYSCFG_Usr_Init(void)
+{
+    LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+}
+
 void IT_BUTTONS_Init(void)
 {
   LL_EXTI_InitTypeDef IT_But_Init = {0};
@@ -102,6 +147,28 @@ void IT_BUTTONS_Init(void)
   NVIC_EnableIRQ(EXTI3_IRQn);
 }
 
+// --- Encoders IT ---
+void IT_Encoders_Init(void)
+{
+  LL_EXTI_InitTypeDef IT_But_Init = {0};
+  IT_But_Init.LineCommand = ENABLE;
+  IT_But_Init.Line_0_31 = LL_EXTI_LINE_4 | LL_EXTI_LINE_6 | LL_EXTI_LINE_8;
+  IT_But_Init.Mode = LL_EXTI_MODE_IT;
+  IT_But_Init.Trigger = LL_EXTI_TRIGGER_RISING_FALLING;
+  LL_EXTI_Init(&IT_But_Init);
+  
+  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE4);
+  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE6);
+  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE8);
+  
+  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_4);
+  NVIC_SetPriority(EXTI4_IRQn, 0);
+  NVIC_EnableIRQ(EXTI4_IRQn);
+  
+  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_6 | LL_EXTI_LINE_8);
+  NVIC_SetPriority(EXTI9_5_IRQn, 0);
+  NVIC_EnableIRQ(EXTI9_5_IRQn);
+}
 
 void IT_Motion_Sens_Init(void)
 {
@@ -119,10 +186,6 @@ void IT_Motion_Sens_Init(void)
   NVIC_EnableIRQ(EXTI9_5_IRQn);
 }
 
-void SYSCFG_Usr_Init(void)
-{
-    LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-}
 
 // --- SysTick Init ---
 void SysTick_UsrInit(void)
