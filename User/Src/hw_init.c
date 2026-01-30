@@ -147,29 +147,6 @@ void IT_BUTTONS_Init(void)
   NVIC_EnableIRQ(EXTI3_IRQn);
 }
 
-// --- Encoders IT ---
-void IT_Encoders_Init(void)
-{
-  LL_EXTI_InitTypeDef IT_But_Init = {0};
-  IT_But_Init.LineCommand = ENABLE;
-  IT_But_Init.Line_0_31 = LL_EXTI_LINE_4 | LL_EXTI_LINE_6 | LL_EXTI_LINE_8;
-  IT_But_Init.Mode = LL_EXTI_MODE_IT;
-  IT_But_Init.Trigger = LL_EXTI_TRIGGER_RISING_FALLING;
-  LL_EXTI_Init(&IT_But_Init);
-  
-  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE4);
-  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE6);
-  LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE8);
-  
-  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_4);
-  NVIC_SetPriority(EXTI4_IRQn, 0);
-  NVIC_EnableIRQ(EXTI4_IRQn);
-  
-  LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_6 | LL_EXTI_LINE_8);
-  NVIC_SetPriority(EXTI9_5_IRQn, 0);
-  NVIC_EnableIRQ(EXTI9_5_IRQn);
-}
-
 void IT_Motion_Sens_Init(void)
 {
   LL_EXTI_InitTypeDef IT_Usr_Struct = {0};

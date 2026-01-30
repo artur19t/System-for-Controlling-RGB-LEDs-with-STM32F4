@@ -31,6 +31,9 @@ but_struct btn_encoder = {
 
 void button_debounce(but_struct *btn)
 {
+  if (btn->released_event)
+    return;
+  
   switch (btn->state)
   {
     case RELEASED:

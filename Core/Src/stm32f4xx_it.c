@@ -192,6 +192,11 @@ void SysTick_Handler(void)
     encoder_read_delta(&encoder_st_bright);
     encoder_read_delta(&encoder_st_color);
     encoder_read_delta(&encoder_st_tone);
+    
+    LIGHT_state_handler(&btn_bed, &light_bed);
+    LIGHT_state_handler(&btn_table,&light_table);
+    LIGHT_state_handler(&btn_room, &light_room);
+    
     sys_ms = 0;
   }
   /* USER CODE END SysTick_IRQn 0 */

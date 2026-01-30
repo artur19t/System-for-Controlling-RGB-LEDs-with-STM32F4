@@ -14,5 +14,4 @@ system\ of\ led\ control/hw_init.o: ..\User\Src\hw_init.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_dma.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_tim.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h \
-  ..\User\Inc\led_driver.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_gpio.h
